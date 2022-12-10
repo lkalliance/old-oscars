@@ -1,0 +1,125 @@
+body {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+table {
+    font-size: 12px;
+    border-spacing: 0;
+}
+
+td {
+    text-align: center;
+    width: 48px;
+    vertical-align: top;
+    padding: 3px 0;
+    border-top: 1px solid #dddddd;
+}
+
+td.first {
+    text-align: left;
+    width: 150px;
+    padding-left: 4px;
+}
+
+td#dir {
+    width: 100px;
+}
+
+thead td {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: bold;
+    vertical-align: bottom;
+    border: none;
+}
+
+thead tr#only td {
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 24px;
+    vertical-align: middle;
+}
+
+thead td.all,
+thead tr#categories td,
+span#andor {
+    cursor: pointer;
+}
+
+span#andor {
+    display: inline-block;
+    padding: 4px;
+    width: 30px;
+    text-align: center;
+}
+
+span#clear {
+    padding: 3px 4px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+thead td.notnom {
+    background-color: #990000;
+    color: white;
+    cursor: pointer;
+}
+
+thead td.nom,
+span#andor.or {
+    background-color: #009900;
+    color: white;
+    cursor: pointer;
+}
+
+thead td.win,
+span#andor.and {
+    background-color: #bbbb00;
+    color: black;
+    cursor: pointer;
+}
+
+tr.winner td { background-color: #dda; }
+td.sorted { background-color: #e7e7e7; }
+td.bigthree { background-color: #e5e5ff; }
+td.sorted.bigthree { background-color: #d5d5ee; }
+tr.winner td.sorted { background-color: #cc9; }
+tr.winner td.bigthree { background-color: #caddaa; }
+tr.winner td.bigthree.sorted {  background-color: #b7c997; }
+
+#check {float: right; visibility: visible;}
+
+#prev, #next, #showOutside {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    opacity: .8;
+    display: none;
+}
+
+#loading.block {
+    display: block;
+}
+
+#loading p {
+    text-align: center;
+    margin-top: 300px;
+    font-size: 30px;
+    font-weight: bold;
+}

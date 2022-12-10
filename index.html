@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link href="oscarcss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <select id="year">
+	<option value=0>All</option>
+    </select>
+    &nbsp;to&nbsp;
+    <select id="eyear">
+	<option value=0>--</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;Directed by&nbsp;
+    <select id="director">
+	<option value=0>Any</option>
+    </select>
+
+    <a id="prev">Previous Year</a>
+    <a id="next">Next Year</a>
+    <a id="showOutside">Show outside awards</a>
+    <table id="maintable">
+        <thead>
+            <tr id="categories">
+                <td class="first">Film</td>
+                <td>Year</td>
+                <td>Dir. by</td>
+                <td>PGA?</td>
+                <td>SAG?</td>
+                <td>DGA?</td>
+                <td>Total</td>
+                <td>Wins</td>
+                <td>Acting</td>
+                <td>Big 3</td>
+                <td>Best Picture</td>
+                <td>Director</td>
+                <td>Film Editing</td>
+                <td>Screenplay</td>
+                <td>Actor</td>
+                <td>Actress</td>
+                <td>Supp. Actor</td>
+                <td>Supp. Actress</td>
+                <td>Score</td>
+                <td>Song</td>
+                <td>Sound Editing</td>
+                <td>Sound Mixing</td>
+                <td>Prod. Design</td>
+                <td>Cinema-tography</td>
+                <td>Costumes</td>
+                <td>Makeup/<br/>Hair</td>
+                <td>VFX</td>
+            </tr>
+            <tr id="only">
+                <td class="first">Filters: <span class="or" id="andor">OR</span> <span id="total"></span></td>
+                <td><span id="clear">Clear</span></td>
+                <td class="all"></td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all"></td>
+                <td class="all"></td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+                <td class="all">all</td>
+            </tr>
+        </thead>
+        <tbody id="filmlist">
+        
+        </tbody>
+    </table>
+    <div id="loading"><p>Loading...</p></div>
+    <script src="oscardbnew.js"></script>
+    <script src="oscarscripts.js"></script>
+    <script>
+        populate(curryear,curryear);
+        sortthegrid("title");
+    </script>
+</body>
+</html>
